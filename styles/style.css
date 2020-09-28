@@ -1,0 +1,13 @@
+#ufo-canvas {
+  border: 1px solid black;
+  margin: 0 auto;
+  display: block;
+  background-image: url("../images/clouds.jpg");
+  background-size: 100% 100%;
+  height: 750px;
+  width: 900px;
+}
+
+body {
+  background-image: url("../images/nightSky.jpg");
+}

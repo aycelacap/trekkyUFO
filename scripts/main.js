@@ -1,11 +1,16 @@
-const canvas = document.getElementById("ufo-canvas");
+const canvas = document.getElementsById("ufo-canvas");
 const ctx = canvas.getContext('2d');
 
-ctx.fillStyle = 'green';
-ctx.fillRect(0, 0, 150, 75);
+// auto resize 
+function resize() {
+  const height = window.innerHeight - 20;
+  const ratio = canvas.width / canvas.height;
+  const width = height * ratio;
 
-ctx.font = '38px Arial';
-ctx.fillStyle = 'red'
-ctx.fillText("trekky", 30, 130);
-ctx.strokeText("UFO", 130, 130)
+  canvas.style.width = width + 'px';
+  canvas.style.height = height + 'px'; 
+};
+
+window.addEventListener('load', resize, false);
+
 
